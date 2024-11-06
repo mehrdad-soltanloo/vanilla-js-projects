@@ -1,0 +1,115 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", serif;
+  background: linear-gradient(135deg, #73a5ff, #5477f5);
+  background: url("./assets/images/9.png") no-repeat center/cover fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1,
+h2 {
+  color: #333;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.search {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+input::placeholder {
+  color: #aaa;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+button {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px;
+
+  border: none;
+  background-color: #5477f5;
+
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #73a5ff;
+}
+
+.weather-info {
+  display: none;
+  animation: fadeIn 1s forwards;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+/* Flexbox container is shown when the class 'show' is added */
+
+.weather-info.show {
+  display: flex; /* Flexbox layout applied */
+}
+
+.weather-text {
+  text-align: left;
+}
+
+/* Weather icon styling */
+.weather-info img {
+  width: 100px; /* Set the width of the weather icon */
+  height: 100px;
+}
+
+#error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Animation for weather info */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,9 @@
+# macOS-specific files
+.DS_Store
+
+# Ignore npm dependencies if you add them
+node_modules/
+
+# Ignore build files if projects are bundled later
+dist/
+build/

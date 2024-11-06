@@ -1,0 +1,65 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem 2rem 3rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+li {
+  display: inline;
+}
+
+main {
+  height: 90vh;
+  margin: 10rem auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 6.4rem;
+}
+
+.info {
+  font-size: 1.8rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  background-color: #ffffff;
+  margin-top: 1rem;
+}
+
+.dark-mode {
+  background-color: #0f172a;
+  color: white;
+}

@@ -1,0 +1,85 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* COLORS */
+  --increase-btn: #22c55e;
+  --decrease-btn: #ef4444;
+  --white: #fff;
+
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--grey-900);
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.counter__number {
+  color: var(--white);
+  font-size: 6.4rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.btn {
+  border: transparent;
+  padding: 0.6rem 1.2rem;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  color: var(--white);
+}
+.decrease:hover {
+  background-color: var(--decrease-btn);
+}
+.increase:hover {
+  background-color: var(--increase-btn);
+}
+
+.reset:hover {
+  background-color: var(--grey-500);
+}

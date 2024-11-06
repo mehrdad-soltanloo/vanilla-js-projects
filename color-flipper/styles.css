@@ -1,0 +1,57 @@
+::after,
+::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.container {
+  background-color: #1e293b;
+  color: #fff;
+  text-align: center;
+  padding: 3.2rem 6.4rem;
+}
+
+.color-code {
+  color: #60a5fa;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+h1 {
+  font-size: 4.6rem;
+}
+
+.btn {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  background-color: #f1f5f9;
+  transition: all 0.3s linear;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
